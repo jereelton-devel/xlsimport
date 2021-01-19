@@ -1,0 +1,231 @@
+
+* {
+    font-family: "Myriad Pro", sans-serif;
+}
+
+body {
+    background: none;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+#header {
+    max-width: 100%;
+    padding: 5px 10px;
+    height: auto;
+    color: #888888;
+    border-bottom: solid #888888 1px;
+}
+
+#header .btn-color-theme {
+    color: #FFFFFF;
+    border: solid #FFFFFF 1px;;
+    background-color: #252525;
+}
+
+#header strong {
+    font-size: 20px;
+    margin: 3px 0px 0px 0px;
+    display: block;
+    font-weight: 400;
+}
+
+#container-fastdash, #container-data {
+    display: none;
+    max-width: 100%;
+    /*border-bottom: solid #6D00D9 1px;*/
+    background-color: #FFFFFF;
+}
+
+#container-fastdash {
+    max-width: 100%;
+    padding: 5px 10px;
+    height: auto;
+    color: #FFFFFF;
+    background-image: linear-gradient(#888888, #333333);
+}
+
+.container-col-box-table {
+    height: 190px;
+    margin: 0px auto;
+    width: 900px;
+}
+
+#container-fastdash .col,
+#container-data .col {
+    text-align: center;
+}
+
+#container-fastdash .box,
+#container-data .box {
+    margin: 10px auto;
+    width: 100%;
+    height: 170px;
+    background-color: #E9E9E9;
+    box-shadow: 2px 3px 5px #555555;
+}
+
+#container-fastdash .box-title,
+#container-data .box-content {
+    text-align: left;
+    width: 100%;
+    margin: 0px auto;
+    padding: 15px;
+    padding-bottom: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #353526;
+}
+
+#container-fastdash .box-content,
+#container-data .box-content {
+    width: 96%;
+    height: 75px;
+    margin: 5px auto;
+    border: solid #006699 1px;
+    border-radius: 5px;
+    color: #6E00DC;
+    font-size: 300%;
+    padding-top: 10px;
+    background-color: #FFFFFF;
+}
+
+#div-table-qtd-os-mes,
+#div-table-qtd-os-status,
+#div-table-cad-ing-range,
+#div-table-qtd-os-cid-uf {
+    margin: 10px auto;
+    height: auto;
+}
+
+#div-content-table-qtd-os-mes,
+#div-content-table-qtd-os-status,
+#div-content-table-cad-ing-range,
+#div-content-table-qtd-os-cid-uf {
+    padding: 15px 15px 0px 15px;
+    margin: 0px auto;
+    border: solid #D6D6D6 1px;
+    height: 180px;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#div-content-table-cad-ing-range {
+    height: 680px;
+}
+
+#table-qtd-os-mes,
+#table-qtd-os-status,
+#table-cad-ing-range,
+#table-qtd-os-cid-uf {
+    height: auto;
+    width: 100%;
+}
+
+#table-qtd-os-mes>thead,
+#table-qtd-os-status>thead,
+#table-cad-ing-range>thead,
+#table-qtd-os-cid-uf>thead {
+    color: #006699;
+    border-bottom: solid #D6D6D6 1px;
+}
+
+#table-qtd-os-mes>tbody>tr,
+#table-qtd-os-status>tbody>tr,
+#table-cad-ing-range>tbody>tr,
+#table-qtd-os-cid-uf>tbody>tr {
+    border-bottom: solid #D6D6D6 1px;
+}
+
+#table-qtd-os-mes>tbody>tr>td,
+#table-qtd-os-status>tbody>tr>td,
+#table-cad-ing-range>tbody>tr>td,
+#table-qtd-os-cid-uf>tbody>tr>td {
+    color: #555555;
+    font-weight: normal;
+    padding-top: 10px;
+}
+
+#div-content-table-qtd-os-mes #div-pager-qtd-os-mes,
+#div-content-table-qtd-os-status #div-pager-qtd-os-status,
+#div-content-table-cad-ing-range #div-pager-cad-ing-range,
+#div-content-table-qtd-os-cid-uf #div-pager-qtd-os-cid-uf {
+    color: #006699;
+    padding: 1px 0px 0px 0px;
+    text-align: center;
+}
+
+#div-pager-qtd-os-mes #ul-pager-qtd-os-mes,
+#div-pager-qtd-os-status #ul-pager-qtd-os-status,
+#div-pager-cad-ing-range #ul-pager-cad-ing-range,
+#div-pager-qtd-os-cid-uf #ul-pager-qtd-os-cid-uf {
+    list-style: none;
+}
+
+#div-pager-qtd-os-mes #ul-pager-qtd-os-mes li,
+#div-pager-qtd-os-status #ul-pager-qtd-os-status li,
+#div-pager-cad-ing-range #ul-pager-cad-ing-range li,
+#div-pager-qtd-os-cid-uf #ul-pager-qtd-os-cid-uf li {
+    display: inline-block;
+    margin: 1px;
+}
+
+h3 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    color: #353526;
+    line-height: 50px;
+    padding-left: 10px;
+    border-left: solid #14ACBA 3px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.padding-footer {
+    padding: 30px;
+}
+
+.cell-qtd {
+    width: 50px;
+    text-align: right;
+}
+
+#div-lock-screen {
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: none;
+}
+
+#container-import {
+    text-align: center;
+    position: fixed;
+    width: 30%;
+    height: 25%;
+    min-height: 320px;
+    left: 35%;
+    top: 15%;
+    z-index: 10000;
+    box-shadow: 2px 4px 6px #888888;
+    display: none;
+}
+
+#container-import .msg {
+    color: #888888;
+    padding: 20px 0px 0px 15px;
+}
+
+#div-msg-action {
+    width: 20%;
+    text-align: center;
+    position: fixed;
+    bottom: 100px;
+    left: 40%;
+}
